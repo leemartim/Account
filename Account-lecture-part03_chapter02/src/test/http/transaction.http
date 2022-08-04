@@ -1,0 +1,19 @@
+### Use Balance
+POST http://localhost:8080/transcation/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000002",
+  "amount": 10000
+}
+
+### Cancel Balance
+POST http://localhost:8080/transcation/cancel
+Content-Type: application/json
+
+{
+  "transactionId": null,
+  "accountNumber": "1000000001",
+  "amount": 10000
+}
